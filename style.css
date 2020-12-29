@@ -1,0 +1,124 @@
+/* welcome to the style file of this project! */
+
+* {
+    transition: all ease .2s ;
+    position: absolute;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.dick{
+
+    width: 138px;
+    height: 420px;
+    background-color: rgb(420, 69, 69);
+    top: 69px;
+    left: 700px;
+    border-radius: 38%;
+    border: 22px solid rgb(420, 69, 420);
+    transform: skew(13deg);
+    background: linear-gradient(180deg, rgb(420, 69, 69), rgb(420, 69, 420));
+    
+}
+
+.dick:hover{
+    width: 120px;
+    height: 690px;
+    background-color: rgb(420, 69, 69);
+    top: -69px;
+    left: 720px;
+    border-radius: 38%;
+    border: 15px solid rgb(420, 69, 420);
+    transform: skew(10deg);
+    background: linear-gradient(360deg, rgb(420, 69, 69), rgb(420, 69, 420));
+}
+    
+.rightball{
+
+    width: 420px;
+    height: 420px;
+    background-color: rgb(420, 69, 420);
+    border-radius: 50%;
+    top: 328px;
+    left: 780px;
+    animation: shrink 4s infinite alternate;
+}
+
+.leftball{
+
+    width: 420px;
+    height: 420px;
+    background-color: rgb(420, 69, 420);
+    border-radius: 50%;
+    top: 360px;
+    left: 500px;
+    animation: shrinkleft 4s infinite alternate;
+}
+
+.leftball:hover{
+    width: 420px;
+    height: 420px;
+    background: rgb(255,69,69);
+background: radial-gradient(circle, rgba(255,69,69,1) 0%, rgba(255,69,255,1) 76%);
+    box-shadow: -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+border-radius: 50%;
+    top: 360px;
+    left: 500px;
+    animation: shrinkleft 4s infinite alternate;
+}
+
+
+
+
+
+@keyframes shrink {
+    from {
+            transform: scale(1);
+            
+    } to {
+            transform: scale(.5);
+    }
+
+
+}
+
+@keyframes shrinkleft {
+    from{
+        transform: scale(1);
+        left: 700px;
+    } to{
+        transform: scale(.6);
+        left: 650px;
+    }
+}
+
+
+.floor{
+    width: 100vw;
+    height: 600px;
+    background-color: rgb(420, 69, 420);
+    top: 669px;
+}
+
+.leftass{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: rgb(255, 69, 69);
+    top: -600px;
+    left: 525px;
+}
+
+.rightass{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: rgb(255, 69, 69);
+    top: -600px;
+    left: 275px;
+}
